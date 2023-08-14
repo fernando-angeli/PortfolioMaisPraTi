@@ -1,0 +1,31 @@
+#imgMenu {
+  height: 100px;
+}
+
+#btnRegister {
+  width: 200px;
+}
+
+#lbTotal {
+  font-size: 20px;
+}
+
+#amountRegisters {
+  border-bottom: 1px solid gray;
+}
+
+#btnRegister {
+  width: 130px;
+}
+
+nav {
+  height: 120px;
+  background-color: lightgrey;
+}
+
+td {
+  text-align: center;
+}
+tr {
+  text-align: center;
+}

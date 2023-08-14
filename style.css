@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#sobre,
+#habilidades,
+#portfolio,
+#contato {
+  padding: 5rem 0;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.5rem;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: black;
+}
+
+.bgImage {
+  height: 110vh;
+  top: -10vh;
+  position: relative;
+  background: url("image/heroImage.jpg");
+  background-size: cover;
+}
+
+.heroTitle {
+  font-size: 5rem;
+}
+
+.heroDesc {
+  font-size: 3.5rem;
+}
+
+.heroText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+#sobre {
+  height: 100vh;
+  margin-top: 150px;
+}
+
+.aboutImage {
+  width: 100%;
+}
+
+#habilidades {
+  height: 100vh;
+  margin-top: 150px;
+}
+
+.cardBody {
+  margin: 0 1rem;
+}
+
+.skillsText.card {
+  height: 200px;
+  cursor: pointer;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.skillsIcon {
+  height: 36px;
+  text-align: center;
+  width: 100%;
+}
+
+.cardTitle {
+  text-align: center;
+}
+
+.card:hover .skillsIcon {
+  color: green;
+}
+
+.skillsText:hover {
+  border: 1px solid green;
+}
+
+#portfolio {
+  margin-top: 150px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+#contato {
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.cardBodyContact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.contactText {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.contactIcon {
+  color: black;
+  font-size: 3rem;
+}
+
+footer {
+  background-color: lightskyblue;
+}
+
+.footerIcon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footerIcon:hover {
+  color: gray;
+}
+
+.footerDev {
+  height: 3rem;
+}
+
+/* Efeito GlassMorphismo*/
+/* From https://css.glass */
+.glass {
+  position: absolute;
+  height: 30%;
+
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: rgba(24, 161, 247, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+}
