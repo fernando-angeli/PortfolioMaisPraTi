@@ -1,3 +1,5 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,10 +54,10 @@
               <a class="nav-link" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
+              <a class="nav-link" href="#portfolio">Portfólio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfólio</a>
+              <a class="nav-link" href="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -169,84 +171,6 @@
       </div>
     </section>
 
-    <!-- * Contact Section -->
-    <section id="contato">
-      <div class="container mt-5 contactContent">
-        <h2 class="text-center">Contato</h2>
-        <div class="row mt-4">
-          <div class="col-lg-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55485.4164403395!2d-50.87244526473399!3d-29.637432729737625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519180e1649ff9d%3A0xdc0c4c0c9ef56a9e!2sParob%C3%A9%2C%20RS%2C%2095630-000!5e0!3m2!1spt-BR!2sbr!4v1690511435940!5m2!1spt-BR!2sbr"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card skillsText">
-                  <div class="cardBodyContact">
-                    <i class="fa-solid fa-mobile-screen contactIcon"></i>
-                    <h3>Telefone</h3>
-                    <p>(51)98484-6843</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card skillsText">
-                  <div class="cardBodyContact">
-                    <a
-                      class="contactText"
-                      href="mailto:fernando_angeli@hotmail.com"
-                    >
-                      <i class="fa-solid fa-envelope contactIcon"></i>
-                      <h3>E-mail</h3>
-                      <p class="contactText">fernando_angeli@hotmail.com</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-lg-3 text-center">
-                <a href="https://github.com/fernando-angeli" target="_blank"
-                  ><i class="fa-brands fa-github contactIcon"></i
-                ></a>
-              </div>
-              <div class="col-lg-3 text-center">
-                <a
-                  href="https://www.linkedin.com/in/luiz-fernando-angeli/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-linkedin contactIcon"></i>
-                </a>
-              </div>
-              <div class="col-lg-3 text-center">
-                <a
-                  href="https://www.facebook.com/luizfernando.angeli"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-facebook contactIcon"></i>
-                </a>
-              </div>
-              <div class="col-lg-3 text-center">
-                <a
-                  href="https://www.instagram.com/luizfernando.angeli/"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-instagram contactIcon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- * Skills Section -->
     <section id="portfolio">
       <div class="container mt-5">
@@ -353,43 +277,89 @@
       </div>
     </section>
 
-    <!-- * Footer -->
-    <footer class="text-center text-white">
-      <div class="container p-4 pb-0">
-        <div class="row mt-4 mb-4 justify-content-between">
-          <div class="col-lg-2">
-            <div class="col-lg-3">
+    <!-- * Contact Section -->
+    <section id="contato">
+      <div class="container mt-5 contactContent">
+        <h2 class="text-center">Contato</h2>
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <iframe
+              class="contato-mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55485.4164403395!2d-50.87244526473399!3d-29.637432729737625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519180e1649ff9d%3A0xdc0c4c0c9ef56a9e!2sParob%C3%A9%2C%20RS%2C%2095630-000!5e0!3m2!1spt-BR!2sbr!4v1690511435940!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card skillsText">
+                  <div class="cardBodyContact">
+                    <i class="fa-solid fa-mobile-screen contactIcon"></i>
+                    <h3>Telefone</h3>
+                    <p>(51)98484-6843</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card skillsText">
+                  <div class="cardBodyContact">
+                    <a
+                      class="contactText"
+                      href="mailto:fernando_angeli@hotmail.com"
+                    >
+                      <i class="fa-solid fa-envelope contactIcon"></i>
+                      <h3>E-mail</h3>
+                      <p class="contactText">fernando_angeli@hotmail.com</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- * Footer -->
+      <footer class="text-center text-white">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-1">
               <a href="https://github.com/fernando-angeli" target="_blank"
                 ><i class="fa-brands fa-github footerIcon"></i
               ></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-1">
               <a
                 href="https://www.linkedin.com/in/luiz-fernando-angeli/"
                 target="_blank"
                 ><i class="fa-brands fa-linkedin footerIcon"></i
               ></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-1">
               <a
                 href="https://www.facebook.com/luizfernando.angeli"
                 target="_blank"
                 ><i class="fa-brands fa-facebook footerIcon"></i
               ></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-1">
               <a
                 href="https://www.instagram.com/luizfernando.angeli/"
                 target="_blank"
                 ><i class="fa-brands fa-instagram footerIcon"></i
               ></a>
             </div>
-          </div>
-          <div class="col-lg-4 footerDev">
-            <p>Desenvolvido por Luiz Fernando Angeli</p>
+            <div class="col-lg-8 text-end">
+              <p class="mb-0">Desenvolvido por Luiz Fernando Angeli</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
   </body>
 </html>

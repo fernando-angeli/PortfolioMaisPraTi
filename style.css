@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 100%;
+}
+
 #sobre,
 #habilidades,
 #portfolio,
 #contato {
   padding: 5rem 0;
+  height: auto;
 }
 
 .navbar {
-  height: 10vh;
+  height: 4rem;
 }
 
 .navbar a {
@@ -23,16 +28,31 @@
 }
 
 .navbar a:hover {
-  background-color: #fff;
+  background-color: #5192ee;
   border-radius: 5px;
-  color: black;
+  color: #fff;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+  color: #5192ee;
+}
+
+.navbar-nav .active .nav-link {
+  color: red;
+}
+
+.scrollNavbarOn {
+  background: #303336;
 }
 
 .bgImage {
-  height: 110vh;
-  top: -10vh;
+  height: 100vh;
   position: relative;
-  background: url("image/heroImage.jpg");
+  background: url("image/background5.jpg");
   background-size: cover;
 }
 
@@ -89,11 +109,11 @@
 }
 
 .card:hover .skillsIcon {
-  color: green;
+  color: #5192ee;
 }
 
 .skillsText:hover {
-  border: 1px solid green;
+  border: 1px solid #5192ee;
 }
 
 #portfolio {
@@ -105,8 +125,12 @@
 }
 
 #contato {
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 0;
 }
 
 .cardBodyContact {
@@ -128,7 +152,12 @@
 }
 
 footer {
-  background-color: lightskyblue;
+  background-color: 303336;
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerIcon {
@@ -137,11 +166,7 @@ footer {
 }
 
 .footerIcon:hover {
-  color: gray;
-}
-
-.footerDev {
-  height: 3rem;
+  color: #5192ee;
 }
 
 /* Efeito GlassMorphismo*/
@@ -154,8 +179,22 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: rgba(24, 161, 247, 0.11);
+  background: rgba(56, 60, 62, 0.11);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.4px);
   -webkit-backdrop-filter: blur(2.4px);
+}
+
+/* Responsividade*/
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #303336;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contato-mapa {
+    width: 100%;
+  }
 }
