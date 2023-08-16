@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Roboto:wght@100;300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 body {
@@ -49,10 +52,14 @@ body {
   background: #303336;
 }
 
+.nameNavbar {
+  font-weight: 400;
+}
+
 .bgImage {
   height: 100vh;
   position: relative;
-  background: url("image/background5.jpg");
+  background: url("image/heroImage.jpg");
   background-size: cover;
 }
 
@@ -61,7 +68,7 @@ body {
 }
 
 .heroDesc {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .heroText {
@@ -74,12 +81,17 @@ body {
 }
 
 #sobre {
-  height: 100vh;
-  margin-top: 150px;
+  height: auto;
+  margin: 150px 20px;
 }
 
-.aboutImage {
-  width: 100%;
+.aboutText {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.subTitleAbout {
+  border-bottom: 1px solid #303633;
 }
 
 #habilidades {
@@ -87,25 +99,35 @@ body {
   margin-top: 150px;
 }
 
-.cardBody {
-  margin: 0 1rem;
+.card {
+  text-align: justify;
 }
 
-.skillsText.card {
-  height: 200px;
+.cardBody {
+  margin: 1rem 1rem;
+}
+
+.cardTitle {
+  display: flex;
+}
+
+.cardTitleText {
+  text-align: start;
+}
+
+.cardText {
+  text-align: justify;
+}
+
+.skillsText {
   cursor: pointer;
   padding: 0 2rem;
   text-align: center;
 }
 
 .skillsIcon {
-  height: 36px;
-  text-align: center;
-  width: 100%;
-}
-
-.cardTitle {
-  text-align: center;
+  font-size: 3rem;
+  padding-right: 2rem;
 }
 
 .card:hover .skillsIcon {
@@ -118,10 +140,6 @@ body {
 
 #portfolio {
   margin-top: 150px;
-}
-
-.card {
-  margin-bottom: 30px;
 }
 
 #contato {

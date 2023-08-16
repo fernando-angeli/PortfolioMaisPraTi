@@ -31,7 +31,7 @@
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
       <div class="container">
-        <a class="navbar-brand" href="#">Luiz Fernando Angeli</a>
+        <a class="navbar-brand nameNavbar" href="#">Luiz Fernando Angeli</a>
         <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
@@ -72,7 +72,7 @@
             <div class="glass">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heroText">
                 <h1 class="heroTitle">Olá, me chamo Fernando</h1>
-                <p class="heroDesc">Desenvolvedor Full Stack Júnior</p>
+                <p class="heroDesc">Desenvolvedor Full Stack</p>
               </div>
             </div>
           </div>
@@ -82,37 +82,91 @@
 
     <!-- * About Section -->
     <section id="sobre">
-      <div class="container mt-5">
+      <div class="container mt-3">
         <h2 class="text-center">Sobre mim</h2>
-        <div class="row mt-5">
+        <div class="row mt-2 align-items-center">
           <!-- ? Imagem sobre mim -->
           <div class="col-lg-4">
-            <img class="aboutImage" src="" alt="Sobre mim" />
+            <img class="img-fluid" src="./image/about.png" alt="Sobre mim" />
           </div>
-          <!-- ? -->
+          <!-- ? Descrição-->
           <div class="col-lg-8">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              praesentium unde, eaque error hic, numquam maiores dolores nostrum
-              mollitia, quae vero vitae? Cum sunt repellendus vitae qui. Animi,
-              deleniti eum.
+            <p class="aboutText ms-2">
+              Sou desenvolvedor Full Stack, possuo conhecimento em programação e
+              estou sempre em busca de novos desafios e aprendizados. Sou um
+              profissional comprometido, dedicado e disposto a aprender. Estou
+              em constante aprimoramento e sempre buscando conhecimento em novas
+              tecnologias e tendências do mercado.
             </p>
             <div class="row mt-3">
               <div class="col-md-6">
                 <ul>
                   <li>Nome: Luiz Fernando Angeli</li>
                   <li>Idade: 35 anos</li>
-                  <li>Ocupação: Administrador/Comercial</li>
+                  <li>Ocupação atual: Administração/Comercial</li>
                 </ul>
               </div>
             </div>
-            <!-- ? Mais informações -->
-            <div class="row mt-3">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repellat eius dicta laborum quos facilis laudantium atque animi,
-                exercitationem tempore vel recusandae eaque nostrum. Earum culpa
-                aperiam vel exercitationem inventore et.
+          </div>
+          <!-- ? Mais informações -->
+          <div class="row mt-3">
+            <div class="col-md-8 align-top">
+              <div class="me-5">
+                <h3 class="mt-2 mb-3 subTitleAbout">
+                  Experiência profissional
+                </h3>
+                <h5>
+                  Administração e Comercial - San Francisco Esquadrias - Jun
+                  2002
+                </h5>
+                <ul>
+                  <li class="aboutText">
+                    Gestão da empresa e organização das atividades
+                    administrativas.
+                  </li>
+                  <li class="aboutText">
+                    Fui responsável pela infraestrutura de servidor, terminais e
+                    configurações dos mesmos.
+                  </li>
+                  <li class="aboutText">
+                    Implementei sistema de ERP (Exec) e software para orçamentos
+                    e ordem de produção de esquadrias em PVC (Hetmo).
+                  </li>
+                  <li class="aboutText">
+                    Criei planilhas para facilitar rotinas diárias e relatórios.
+                  </li>
+                  <li class="aboutText">
+                    Detalhamento técnico de esquadrias com uso de software,
+                    planilhas e projetos em Autocad.
+                  </li>
+                </ul>
+
+                <h5>Estágio - CWI Software - Ago 2021 - Dez 2021</h5>
+                <ul>
+                  <li class="aboutText">
+                    Projeto Crescer, fase 1: Orientação à Objetos (com Java),
+                    HTML/CSS, Banco de Dados e JavaScript.
+                  </li>
+                  <li class="aboutText">
+                    Projeto Crescer, fase 2: React, Java (com Spring Boot),
+                    Engenharia e realizamos um TCC final.
+                  </li>
+                  <li class="aboutText">Estágio na empresa.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 align-top">
+              <h3 class="mt-2 mb-3 subTitleAbout">Formação</h3>
+              <h5>
+                Pós-Graduação - Desenvolvimento Fullstack de Sistemas Modernos
+                para Nuvem (Cloud Native)
+              </h5>
+              <p class="aboutText">
+                Universidade do Extremo Sul Catarinense - Ago 2022
+              </p>
+              <h5>Tecnólogo - Sistemas para Internet</h5>
+              <p class="aboutText">
+                Universidade do Vale do Rio dos Sinos - Dez 2021
               </p>
             </div>
           </div>
@@ -122,26 +176,51 @@
 
     <!-- * Skills Section -->
     <section id="habilidades">
-      <div class="container mt-5">
+      <div class="container mt-3">
         <h2 class="text-center">Habilidades</h2>
 
         <div class="row mt-5">
           <div class="col-lg-6 mt-4">
             <div class="card skillsText">
               <div class="cardBody">
-                <i class="fa-solid fa-code skillsIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento Back-End</h3>
-                <p class="cardText mt-3">Tecnologias: Java com Spring-boot</p>
+                <div class="cardTitle">
+                  <i class="fa-brands fa-java skillsIcon"></i>
+                  <h3 class="cardTitleText mt-3">Java - Back-End</h3>
+                </div>
+                <p class="cardText mt-3">
+                  Java foi a primeira linguagem de programação que tive contato,
+                  e foi a minha escolha para estudar e ir conhecer mais afundo.
+                  Além dos estudos na Unisinos, fiz cursos de nível inicial e
+                  avançado. Após entender melhor a linguagem e a Orientação à
+                  objetos comecei estudar o uso do framework Spring Boot, então
+                  comecei a desenvolver API´s Rest. Participei do Crescer onde
+                  desenvolvi API´s Rest e também, fiz um Bootcamp focado em
+                  Back-End utilizando Java com Spring Boot, onde pude reforçar
+                  os conhecimentos sobre microserviços, autenticação com token
+                  JWT, persistência de dados, validações e testes.
+                </p>
               </div>
             </div>
           </div>
-
           <div class="col-lg-6 mt-4">
             <div class="card skillsText">
               <div class="cardBody">
-                <i class="fa-solid fa-check skillsIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento Back-End</h3>
-                <p class="cardText mt-3">Tecnologias: Java com Spring-boot</p>
+                <div class="cardTitle">
+                  <i class="fa-brands fa-react skillsIcon"></i>
+                  <h3 class="cardTitleText mt-3">React - Front-End</h3>
+                </div>
+                <p class="cardText mt-3">
+                  Depois de aprender sobre HTML e CSS na faculdade, comecei
+                  também a estudar através de cursos complementares para
+                  aprofundar meus conhecimentos em Front-End. No projeto
+                  Crescer, tive a oportunidade de conhecer o React, onde
+                  desenvolvemos aplicativos para consumir serviços de API´s Rest
+                  e desenvolvi alguns projetos, inclusive um aplicativo completo
+                  utilizando Java com Spring Boot do Back-End e React Native no
+                  Front-End. Meu ultimo contato com HTML e CSS foi no programa
+                  +PraTi, onde utilizamos Bootstrap para desenvolver páginas
+                  web.
+                </p>
               </div>
             </div>
           </div>
@@ -152,7 +231,7 @@
             <div class="card skillsText">
               <div class="cardBody">
                 <i class="fa-solid fa-check skillsIcon"></i>
-                <h3 class="cardTitle mt-3">Desenvolvimento Back-End</h3>
+                <h3 class="cardTitle mt-3">Desenvolvimento Front-End</h3>
                 <p class="cardText mt-3">Tecnologias: Java com Spring-boot</p>
               </div>
             </div>
@@ -173,7 +252,7 @@
 
     <!-- * Skills Section -->
     <section id="portfolio">
-      <div class="container mt-5">
+      <div class="container mt-3">
         <h2 class="text-center mb-4">Portfolio</h2>
 
         <div class="row">
@@ -279,7 +358,7 @@
 
     <!-- * Contact Section -->
     <section id="contato">
-      <div class="container mt-5 contactContent">
+      <div class="container mt-3 contactContent">
         <h2 class="text-center">Contato</h2>
         <div class="row mt-4">
           <div class="col-lg-6">
