@@ -8,15 +8,18 @@
 }
 
 body {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #sobre,
 #habilidades,
 #portfolio,
 #contato {
-  padding: 5rem 0;
+  padding-top: 5rem;
   height: auto;
+  width: 100%;
+  margin-top: 150px;
 }
 
 .navbar {
@@ -44,10 +47,6 @@ body {
   color: #5192ee;
 }
 
-.navbar-nav .active .nav-link {
-  color: red;
-}
-
 .scrollNavbarOn {
   background: #303336;
 }
@@ -64,7 +63,7 @@ body {
 }
 
 .heroTitle {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .heroDesc {
@@ -80,11 +79,6 @@ body {
   color: #fff;
 }
 
-#sobre {
-  height: auto;
-  margin: 150px 20px;
-}
-
 .aboutText {
   text-align: justify;
   font-size: 1rem;
@@ -94,21 +88,17 @@ body {
   border-bottom: 1px solid #303633;
 }
 
-#habilidades {
-  height: auto;
-  margin-top: 150px;
-}
-
 .card {
-  text-align: justify;
+  height: 800px;
 }
 
 .cardBody {
-  margin: 1rem 1rem;
+  margin: 1rem 1.5rem;
 }
 
 .cardTitle {
   display: flex;
+  align-items: center;
 }
 
 .cardTitleText {
@@ -119,10 +109,11 @@ body {
   text-align: justify;
 }
 
-.skillsText {
+.skillsText.card {
   cursor: pointer;
   padding: 0 2rem;
   text-align: center;
+  height: 100%;
 }
 
 .skillsIcon {
@@ -138,30 +129,39 @@ body {
   border: 1px solid #5192ee;
 }
 
-#portfolio {
-  margin-top: 150px;
+.portfolioText.card {
+  cursor: pointer;
+  text-align: center;
+  height: 100%;
 }
 
 #contato {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-  padding-top: 80px;
-  padding-bottom: 0;
+  height: 90vh;
+  margin-bottom: 10px;
+}
+
+.contactContent .card {
+  display: flex;
+  justify-content: center;
+  height: 200px;
 }
 
 .cardBodyContact {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .contactText {
   font-size: 15px;
   text-decoration: none;
   color: black;
+  text-align: center;
 }
 
 .contactIcon {
@@ -169,22 +169,35 @@ body {
   font-size: 3rem;
 }
 
-footer {
-  background-color: 303336;
-  height: 4rem;
-  align-items: center;
+.mapa {
+  height: 450px;
+}
+
+.footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  background-color: 303336;
+  height: 10vh;
 }
 
 .footerIcon {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .footerIcon:hover {
   color: #5192ee;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Efeito GlassMorphismo*/
@@ -205,14 +218,76 @@ footer {
 
 /* Responsividade*/
 
+@media (max-width: 450px) {
+  .heroTitle {
+    font-size: 1rem;
+  }
+
+  .heroDesc {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroDesc {
+    font-size: 1rem;
+  }
+
+  .skillsText.card {
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .glass {
+    height: 50%;
+  }
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroDesc {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     background-color: #303336;
   }
+
+  .mapa {
+    height: 350px;
+  }
+
+  .footer {
+    padding-top: 10px;
+    height: 5rem;
+  }
+
+  .footer .icons {
+    margin-bottom: 7px;
+  }
+
+  .footer p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1400px) {
+  #contato .card {
+    margin-top: 1rem;
+  }
+
   .contato-mapa {
     width: 100%;
+  }
+
+  #contato {
+    height: auto;
   }
 }

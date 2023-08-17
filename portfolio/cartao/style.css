@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(94, 56, 221);
+}
+
+.frame {
+  position: absolute;
+  background-color: #201c29;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+}
+
+.frame,
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-me {
+  position: absolute;
+  top: 20%;
+  left: 77%;
+  font-size: 20px;
+  transform: rotate(-90deg);
+}
+
+.front h1 {
+  font-size: 2.5rem;
+  margin: 1rem 3rem;
+  color: rgb(131, 96, 247);
+}
+
+p {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .flip {
+  transform: rotateX(180deg) translate3d(0, 0, 0);
+}
+
+.flip {
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #201c29;
+}
+
+.card .back {
+  transform: rotateX(-180deg);
+  position: absolute;
+  top: 10;
+  left: 10;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.back h2 {
+  font-size: 2rem;
+  color: rgb(131, 96, 247);
+  margin-bottom: 1rem;
+}
+
+.back h3 {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.network > a > img {
+  width: 32px;
+}
+
+.network > a > img:hover {
+  cursor: pointer;
+  width: 42px;
+}
+
+.network {
+  display: flex;
+  gap: 2rem;
+}
