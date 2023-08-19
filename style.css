@@ -12,6 +12,11 @@ body {
   height: 100%;
 }
 
+:root {
+  --color-blue: #5192ee;
+  --color-gray: #303336;
+}
+
 #sobre,
 #habilidades,
 #portfolio,
@@ -20,6 +25,10 @@ body {
   height: auto;
   width: 100%;
   margin-top: 150px;
+}
+
+.sectionsTitle {
+  font-weight: bold;
 }
 
 .navbar {
@@ -34,9 +43,18 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #5192ee;
+  background-color: var(--color-blue);
   border-radius: 5px;
   color: #fff;
+}
+
+.navbar .active a:hover {
+  color: #fff;
+}
+
+.navbar-nav .active .nav-link {
+  color: var(--color-blue);
+  font-weight: bold;
 }
 
 .navbar .navbar-toggler-icon {
@@ -44,11 +62,15 @@ body {
 }
 
 .navbar .navbar-toggler {
-  color: #5192ee;
+  color: var(--color-blue);
+}
+
+.nav-link:hover {
+  color: var(--color-blue);
 }
 
 .scrollNavbarOn {
-  background: #303336;
+  background: var(--color-gray);
 }
 
 .nameNavbar {
@@ -85,7 +107,7 @@ body {
 }
 
 .subTitleAbout {
-  border-bottom: 1px solid #303633;
+  border-bottom: 1px solid var(--color-gray);
 }
 
 .card {
@@ -122,11 +144,11 @@ body {
 }
 
 .card:hover .skillsIcon {
-  color: #5192ee;
+  color: var(--color-blue);
 }
 
 .skillsText:hover {
-  border: 1px solid #5192ee;
+  border: 1px solid var(--color-blue);
 }
 
 .portfolioText.card {
@@ -149,12 +171,8 @@ body {
   height: 200px;
 }
 
-.cardBodyContact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.contactContent .card:hover {
+  border-color: var(--color-blue);
 }
 
 .contactText {
@@ -178,7 +196,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: 303336;
+  background-color: var(--color-gray);
   height: 10vh;
 }
 
@@ -188,7 +206,7 @@ body {
 }
 
 .footerIcon:hover {
-  color: #5192ee;
+  color: var(--color-blue);
 }
 
 .footer p {
@@ -257,7 +275,7 @@ body {
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background-color: #303336;
+    background-color: var(--color-gray);
   }
 
   .mapa {

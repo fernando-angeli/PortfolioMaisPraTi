@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Fernando</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
 
     <!-- ! Bootstrap -->
@@ -29,40 +28,42 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-      <div class="container">
-        <a class="navbar-brand nameNavbar" href="#">Luiz Fernando Angeli</a>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Navegação do toggle"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#inicio">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#habilidades">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+          <a class="navbar-brand nameNavbar" href="#">Luiz Fernando Angeli</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navegação do toggle"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfólio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
 
     <!-- * Hero Section -->
     <section id="inicio">
@@ -83,7 +84,7 @@
     <!-- * About Section -->
     <section id="sobre">
       <div class="container mt-3">
-        <h2 class="text-center">Sobre mim</h2>
+        <h2 class="text-center sectionsTitle">Sobre mim</h2>
         <div class="row mt-2 align-items-center">
           <!-- ? Imagem sobre mim -->
           <div class="col-lg-4">
@@ -173,7 +174,7 @@
     <!-- * Skills Section -->
     <section id="habilidades">
       <div class="container mt-3">
-        <h2 class="text-center">Habilidades</h2>
+        <h2 class="text-center sectionsTitle">Habilidades</h2>
         <div class="row mt-5">
           <div class="col-lg-6 mt-4">
             <div class="card skillsText">
@@ -415,7 +416,7 @@
     <!-- * Contact Section -->
     <section id="contato">
       <div class="container contactContent">
-        <h2 class="text-center">Contato</h2>
+        <h2 class="text-center sectionsTitle">Contato</h2>
         <div class="row mt-4">
           <div class="col-lg-6">
             <iframe
@@ -433,25 +434,29 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="card contactText">
-                  <div class="cardBodyContact">
+                  <a
+                    class="contactText"
+                    href="https://wa.me/+5551984846843"
+                    target="_blank"
+                  >
                     <i class="fa-solid fa-mobile-screen contactIcon"></i>
                     <h3>Telefone</h3>
                     <p>(51)98484-6843</p>
-                  </div>
+                  </a>
                 </div>
               </div>
+
               <div class="col-lg-6">
                 <div class="card contactText">
-                  <div class="cardBodyContact">
-                    <a
-                      class="contactText"
-                      href="mailto:fernando_angeli@hotmail.com"
-                    >
-                      <i class="fa-solid fa-envelope contactIcon"></i>
-                      <h3>E-mail</h3>
-                      <p>fernando_angeli@hotmail.com</p>
-                    </a>
-                  </div>
+                  <a
+                    class="contactText"
+                    href="mailto:fernando_angeli@hotmail.com"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-envelope contactIcon"></i>
+                    <h3>E-mail</h3>
+                    <p>fernando_angeli@hotmail.com</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -493,5 +498,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
