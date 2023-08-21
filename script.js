@@ -34,3 +34,11 @@ navLinks.forEach(function (navLink) {
     navbarCollapse.classList.remove("show"); // Remover a classe "show" para esconder a barra de navegação
   });
 });
+
+document
+  .querySelector(".navbar-brand")
+  .addEventListener("click", function (event) {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    document.querySelector(".inicio").className += " active";
+  });

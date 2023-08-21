@@ -15,6 +15,8 @@ body {
 :root {
   --color-blue: #5192ee;
   --color-gray: #303336;
+  --bs-navbar-brand-hover-color: var(--color-blue);
+  --bs-emphasis-color-rgb: var(--color-blue);
 }
 
 #sobre,
@@ -73,8 +75,12 @@ body {
   background: var(--color-gray);
 }
 
-.nameNavbar {
+.navbar .navbar-brand {
   font-weight: 400;
+}
+
+.navbar .navbar-brand:focus {
+  color: #fff;
 }
 
 .bgImage {
@@ -222,16 +228,16 @@ body {
 /* From https://css.glass */
 .glass {
   position: absolute;
-  height: 30%;
+  height: 40%;
 
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: rgba(56, 60, 62, 0.11);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.4px);
-  -webkit-backdrop-filter: blur(2.4px);
+  background: rgba(48, 51, 54, 0.14);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
 }
 
 /* Responsividade*/
@@ -293,6 +299,10 @@ body {
 
   .footer p {
     text-align: center;
+  }
+
+  .imgAbout {
+    margin-bottom: 2rem;
   }
 }
 
