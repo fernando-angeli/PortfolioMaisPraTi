@@ -1,11 +1,11 @@
 # Portfolio +PraTi
 
-## Meu portfólio está dividido nas seguintes sessões:
+## Meu portfólio está dividido nas seguintes seções:
 1) __Inicio__
 >Página inicial de apresentação.
 
 2) __Sobre__
->Nesta sessão faço uma apresentação sobre mim e minha trajetória profissional, incluindo experiências profissionais e formação.
+>Nesta seção faço uma apresentação sobre mim e minha trajetória profissional, incluindo experiências profissionais e formação.
 
 3) __Habilidades__
 >Nas minhas habilidades procurei destacar linguagens de programação as quais tenho maior conhecimento, descrever
