@@ -20,4 +20,11 @@
 
 ## Sobre o projeto
 Neste projeto utilizei HTML, CSS, JavaScript e Bootstrap.
+
 A palheta de cores utilizada:
+
+![Paleta de cores utilizadas no projeto.](https://github.com/fernando-angeli/PortfolioMaisPraTi/blob/master/image/paleta%20de%20cores.jpg?raw=true)
+
+
+## Link do página no Github Pages
+[Luiz Fernando Angeli - Portfólio](https://fernando-angeli.github.io/PortfolioMaisPraTi/#)
